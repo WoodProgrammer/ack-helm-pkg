@@ -1,0 +1,20 @@
+kind: Function
+metadata:
+  name: lambda-role
+  annotations:
+    services.k8s.aws/region: $AWS_REGION
+spec:
+  name: lambda-role
+  code:
+    s3Bucket: bucket-name
+    s3Key: bucket-key
+  role: lambda-role
+  runtime: python3.9
+  handler: main
+  description: function created by ACK lambda-controller e2e tests
+  vpcConfig:
+    securityGroupIDs:
+      - sg-123123
+    subnetIDs:
+      - subnet-123
+      - subnet-124
