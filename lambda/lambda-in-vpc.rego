@@ -2,7 +2,7 @@ package main
 
 deny[msg] {
   input.kind == "Function"
-  not input.spec.vpcConfig
+  not input.code.s3Bucket
 
-  msg := "Lamda function should be in VPC"
+  msg := "Lamda function should use the artifact in S3 buckets"
 }
