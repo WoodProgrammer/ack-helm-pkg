@@ -7,7 +7,7 @@ spec:
   roleARN: dev-cluster
   resourcesVPCConfig:
     endpointPrivateAccess: true
-    endpointPublicAccess: true
+    endpointPublicAccess: false
     subnetIDs:
       - "subnet-123"
       - "subnet-124"

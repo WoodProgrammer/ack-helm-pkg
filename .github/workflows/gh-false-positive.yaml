@@ -1,0 +1,22 @@
+on: push
+name: FalsePositive
+jobs:
+  conftest:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: check-s3-rules
+      continue-on-error: true
+      uses: instrumenta/conftest-action@master
+      with:
+        files: manifests/bucket.yaml
+    - name: check-eks-rules
+      continue-on-error: true
+      uses: instrumenta/conftest-action@master
+      with:
+        files: manifests/eks.yaml
+    - name: check-ecr-rules
+      continue-on-error: true
+      uses: instrumenta/conftest-action@master
+      with:
+        files: manifests/ecr.yaml
