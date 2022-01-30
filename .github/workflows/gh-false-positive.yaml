@@ -1,11 +1,4 @@
-on:
-  push:
-      branches:
-      - "master"
-  pull_request:
-    paths:
-    - 'policy/*'
-
+on: push
 name: FalsePositive
 jobs:
   conftest:
