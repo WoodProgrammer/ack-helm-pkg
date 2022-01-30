@@ -10,9 +10,9 @@ If you want to use AWS ACK, you can check your manifests with <a href="https://g
 | ----------- | ----------- |
 | s3      | Supported       |
 | lambda   | Supported        |
+| ECR   | Supported        |
+| EKS   | InProgress        |
 | EC2   | InProgress        |
-| RDS   | InProgress        |
-| ApiGateway   | InProgress        |
 
 
 ## Lambda
