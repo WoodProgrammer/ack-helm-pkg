@@ -1,0 +1,9 @@
+apiVersion: ecr.services.k8s.aws/v1alpha1
+kind: Repository
+metadata:
+  name: ecr-repo
+spec:
+  name: ecr-repo
+  imageScanningConfiguration:
+    scanOnPush: false
+  imageTagMutability: MUTABLE
