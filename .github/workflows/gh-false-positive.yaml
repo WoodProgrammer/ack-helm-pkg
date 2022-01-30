@@ -6,6 +6,6 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: check-s3-rules
-      uses: instrumenta/conftest-action/helm@master
+      uses: instrumenta/conftest-action@master
       with:
         files: manifests/bucket.yaml
