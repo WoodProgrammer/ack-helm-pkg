@@ -1,8 +1,9 @@
+name: FalsePositiveTests
 on:
   pull_request:
       types:
         - opened
-name: Validate
+        
 jobs:
   conftest:
     runs-on: ubuntu-latest
