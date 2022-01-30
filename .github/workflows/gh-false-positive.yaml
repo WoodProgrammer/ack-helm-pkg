@@ -1,9 +1,12 @@
-name: FalsePositiveTests
 on:
+  push:
+      branches:
+      - "master"
   pull_request:
-      types:
-        - opened
-        
+    paths:
+    - 'policy/*'
+
+name: FalsePositive
 jobs:
   conftest:
     runs-on: ubuntu-latest
