@@ -11,7 +11,7 @@ If you want to use AWS ACK, you can check your manifests with <a href="https://g
 | s3      | Supported       |
 | lambda   | Supported        |
 | ECR   | Supported        |
-| EKS   | InProgress        |
+| EKS   | Supported        |
 | EC2   | InProgress        |
 
 
