@@ -1,0 +1,11 @@
+on: push
+name: Validate
+jobs:
+  conftest:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: check-s3-rules
+      uses: instrumenta/conftest-action/helm@master
+      with:
+        files: manifests/bucket.yaml
