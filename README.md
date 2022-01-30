@@ -12,7 +12,6 @@ If you want to use AWS ACK, you can check your manifests with <a href="https://g
 | lambda   | Supported        |
 | ECR   | Supported        |
 | EKS   | Supported        |
-| EC2   | InProgress        |
 
 
 ## Lambda
@@ -35,5 +34,3 @@ FAIL - manifests/bucket.yaml - main - You have to enable versioning
 
 4 tests, 2 passed, 0 warnings, 2 failures, 0 exceptions
 ```
-
-Supported ACK Rules;
